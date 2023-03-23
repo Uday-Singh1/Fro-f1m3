@@ -1,0 +1,5 @@
+De code die ik heb getypt gaat over charts grids, en api/ data via json ophalen  
+
+dit is allemaal gedaan door middel van: html en css, javascript en json 
+
+HTML;

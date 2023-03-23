@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* 1rem = standaard 16 px maar kan veranderd worden in html tag*/
+html{
+    /* REGEL 11 MAG JE NOOIT DOEN */
+    /* font-size:10px; 1rem => 10 px */
+    font-size: 62.5%; /*bij een standaardgrootte van 16px is 1rem nu 10px. Bij de 64px lettergrootte is 1rem 40px */
+}
+body{
+    display: flex;
+    justify-content:center ;
+    min-height: 100vh;
+    align-items: center;
+    font-family: sans-serif;
+    background: #222831;
+
+}
+
+form{
+   width: 50rem;
+   min-height: 40rem;
+   background:red;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   padding: 4rem;
+   font: size 2rem;
+   gap:2rem;
+}
+
+form div{
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input{
+    display: block;
+    width: 30ch;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 35ch;
+    width:100% ;
+    font-size: 1.6rem;
+    border: 1px solid black ;
+    font-family: sans-serif;
+    padding: 1rem 2rem;
+    resize: none;
+}
+
+
+
+/* IN EEN MEDIAQUERY IS 1REM ALTIJD EVEN GROOT ALS DE BROWSER FONT-SIZE, ONGEACHT WAT ER IN HTML STAAT */
+
+/*
+! important
+inline css zoals <article style="background: pink">
+id zoals #vierkant #story
+class zoals .vierkant .button .bigImage
+tag zoals article, p, button. pseudo classes zoals :hover
+*/

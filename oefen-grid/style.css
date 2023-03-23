@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: #eee;
+    --shadow: = 0 2rem 2rem 0 rgba(0,0,0,0.2);
+}
+html{
+    font-size: 62.5%;
+}
+
+body{   
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header header header header"
+        "info1 info1 content2 content2 content2"
+        "info1 info1 content2 content2 content2"
+        "info1 info1 content2 content2 content2"
+        "footer1 footer1 footer1 footer1 footer1";
+        gap:  2rem;
+        background:var(--background);
+
+}
+
+.header{
+    grid-area:  header;
+    background: var(--background);
+   
+}
+
+.content{
+    grid-area: content2;
+    background:var(--background);
+}
+
+.info{
+    grid-area: info1;
+    background:var(--background);
+}
+
+.footer{
+    grid-area: footer1;
+    background: var(--background);
+    box-shadow: var(--shadow);
+}
+
+@media screen and (max-width: 50rem) {
+    body{
+        min-height: 300vh;
+        grid-template-rows: 10rem repeat( 5,20rem) 10rem;
+        grid-template-areas: 
+        "header header header header header"
+        "info1 info1 info1 info1 info1"
+        "info1 info1 info1 info1 info1"
+        "content2 content2 content2 content2 content2"
+        "content2 content2 content2 content2 content2"
+        "content2 content2 content2 content2 content2"
+        "footer1 footer1 footer1 footer1 footer1";
+    }
+}

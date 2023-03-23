@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/grid/main.js" defer></script>
+</head>
+<body onload="startTime()">
+ <main class="dashboard">
+    <section class="section--first">
+        <article class="card card--first"> 
+            <h2 id="date" id="time"></h2>
+            <h2 id="time"></h2>
+        </article>
+        <article class="card card--second">
+            <canvas id="js--chart--1"></canvas>
+        </article>
+        <article class="card card--third">
+            <canvas id="js--chart--3"></canvas>
+        </article>
+        <article class="card card--fourth">
+            <article class= "card card--stopwatch"> 
+                <div>
+                    <span class="timerText" id="js--minutesTimer">0</span>
+                   <span class="timerText" >:</span> 
+                    <span class="timerText" id="js--secondsTimer">0</span>
+                </div>
+               <section class="buttonWrapper">
+                <button class="button button--start" id="js--start">Start</button>
+                <button class="button button--stop" id="js--stop">Stop</button>
+                <button class="button button--reset" id="js--reset">Reset</button>
+                </section> 
+            </article>
+        </article>
+    </section>
+    <section class="section--second">
+        <canvas id="js--chart--2"></canvas>
+    </section>
+    </main>
+</body>
+</html>

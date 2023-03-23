@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+
+body{
+    font-size: 2rem;
+    background: #a17704 ;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0px 1rem 2rem 0px rgba(0,0,0,0.2) ;
+    flex-shrink: 0;
+}
+
+.card--buy{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.card--buy img{
+    height: 70%;
+    width: 100%;
+}
+
+.card--buy p{
+    height: 20%;
+    font-size: 75%;
+}
+
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+
+.card--slider > h2{
+    font-size: 400%;
+}
+.card--slider > input{
+   -webkit-animation: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: #e53935;  /*fallback for old browsers */
+    background: -webkit-linear-gradient( to right, #e35d5b, #e53935);
+    background: linear-gradient(to right, #feac5e, #c779d0);
+}
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card--slider > input ::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background:-webkit-linear-gradient(to right, #e35d5b, #e53935);
+    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+    border: none;
+    cursor: pointer;
+}
+.card--slider > input::-moz-range-thumb{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #e53935;
+    background: -webkit-linear-gradient(to right, #e35);
+}
+.timerText{
+    font-size: 200%;
+}
+
+.button{
+    padding:1rem,2rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: white; 
+}
+
+.button--start{
+    background: #00c970;
+    
+}
+
+.button--stop{
+    background: #890f0d ;
+   
+}
+
+.button--reset{
+    background: #5463ff;
+   
+}

@@ -1,0 +1,58 @@
+uitleg over de chart gemaakt in javascript 
+zodra je een chart hebt gevonden op de Chart.js website dan kan je een 
+
+"const config aanmaken"
+
+const config = {
+type: 'line',  (de "type" kan je aanpassen om de vorm van de diagram aan te passen je kan : line, doughnut , bar , pie etc. )
+data: data,  
+options: {}
+};
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    Code:
+const labels = [
+'January',
+'February',
+'March',
+'April',
+'May',
+'June',
+];
+
+const data = {
+labels: labels,
+datasets: [{
+label: 'My First dataset',
+backgroundColor: 'rgb(255, 99, 132)',
+borderColor: 'rgb(255, 99, 132)',
+data: [0, 10, 5, 2, 20, 30, 45],
+ }]
+};
+
+const config = {
+type: 'line',
+data: data,
+options: {}
+};
+
+const myChart = new Chart(
+    document.getElementById('js--chart--1'),
+    config
+);
